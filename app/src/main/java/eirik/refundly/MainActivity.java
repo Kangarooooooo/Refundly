@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
             Fragment fragment = new MenuFragment();
+            
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.fragmentindhold, fragment)  // tom container i layout
                     .commit();
