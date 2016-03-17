@@ -11,9 +11,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
-            Fragment fragment = new LoginFragment();
+            Fragment fragment = new MenuFragment();
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.fragment_container, fragment)  // tom container i layout
+                    .add(R.id.fragmentindhold, fragment)  // tom container i layout
                     .commit();
 
         }
